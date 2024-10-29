@@ -1,14 +1,38 @@
 """
 Home page module for the Car Brand Quiz application.
 """
+import os
+from PIL import Image
 import customtkinter as ctk
 from pages.base_page import BasePage
-from config import TITLE_FONT_SIZE, NORMAL_FONT_SIZE
+from config import TITLE_FONT_SIZE, NORMAL_FONT_SIZE, LOGO_PATH
 
 
 class HomePage(BasePage):
     def create_content(self):
         """Create the content for the home page."""
+        # Header frame for logo
+        header_frame = ctk.CTkFrame(self.frame, fg_color="transparent")
+        header_frame.pack(pady=(0, 10), fill="x")
+
+        # Load and display logo
+        try:
+            if os.path.exists(LOGO_PATH):
+                logo_image = Image.open(LOGO_PATH)
+                self.logo = ctk.CTkImage(
+                    light_image=logo_image,
+                    dark_image=logo_image,
+                    size=(60, 60)
+                )
+                logo_label = ctk.CTkLabel(
+                    header_frame,
+                    image=self.logo,
+                    text=""
+                )
+                logo_label.pack(pady=10)
+        except Exception as e:
+            print(f"Error loading logo: {e}")
+
         # Welcome title
         self.create_label(
             self.frame,
