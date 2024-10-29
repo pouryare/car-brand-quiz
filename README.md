@@ -60,26 +60,26 @@ python main.py
 
 ```
 car-brand-quiz/
-├── assets/                 # Static assets
-│   ├── data/              # Database storage
-│   └── images/            # Image assets
-│       ├── clues/         # Question clue images
-│       └── logo/          # Application logo
-├── pages/                 # UI pages
-│   ├── base_page.py       # Base page template
-│   ├── game_page.py       # Main game interface
-│   ├── home_page.py       # Home screen
-│   ├── info_page.py       # Instructions page
+├── assets/                   # Static assets
+│   ├── data/                 # Database storage
+│   └── images/               # Image assets
+│       ├── clues/            # Question clue images
+│       └── logo/             # Application logo
+├── pages/                    # UI pages
+│   ├── base_page.py          # Base page template
+│   ├── game_page.py          # Main game interface
+│   ├── home_page.py          # Home screen
+│   ├── info_page.py          # Instructions page
 │   ├── player_input_page.py  # Player name input
-│   ├── score_page.py      # High scores display
-│   └── settings_page.py   # Question management
-├── utils/                 # Utilities
-│   └── image_handler.py   # Image processing
-├── config.py             # Configuration settings
-├── database_operations.py # Database management
-├── game_logic.py         # Core game mechanics
-├── main.py              # Application entry point
-└── requirements.txt     # Project dependencies
+│   ├── score_page.py         # High scores display
+│   └── settings_page.py      # Question management
+├── utils/                    # Utilities
+│   └── image_handler.py      # Image processing
+├── config.py                 # Configuration settings
+├── database_operations.py    # Database management
+├── game_logic.py             # Core game mechanics
+├── main.py                   # Application entry point
+└── requirements.txt          # Project dependencies
 ```
 
 ## 📋 Module Descriptions
