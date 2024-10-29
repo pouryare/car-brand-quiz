@@ -13,6 +13,10 @@ DATA_DIR = os.path.join(ASSETS_DIR, 'data')
 LOGO_DIR = os.path.join(IMAGES_DIR, 'logo')
 CLUES_DIR = os.path.join(IMAGES_DIR, 'clues')
 
+# Logo settings
+LOGO_PATH = os.path.join(LOGO_DIR, 'python_logo.gif')
+LOGO_SIZE = (60, 60)  # Width, Height for logo
+
 # Database settings
 DB_NAME = 'branddb.db'
 DB_PATH = os.path.join(DATA_DIR, DB_NAME)
